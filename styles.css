@@ -141,7 +141,56 @@ body {
 
 }
 
+.section_header{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(198, 222, 241, 0.3);
+    border-radius: 80px;
+}
 
+.compare_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;  /* Ensure the container takes full width of its parent */
+}
+
+.compare_images figure {
+    position: relative;
+    width: 80%;  /* Control the width of each figure here */
+    margin: 10px;
+    text-align: center;
+}
+
+.compare_images a {
+    text-decoration: none;  /* Removes underline from links */
+    color: inherit;  /* Inherits text color from parent elements */
+    display: block;  /* Makes the link block-level to fill the figure */
+    width: 100%;  /* Ensures the link fills the figure */
+}
+
+.compare_images img {
+    width: 100%;  /* Image fills the anchor element */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 30px;  /* Adds rounded corners to the image */
+    transition: transform 0.3s ease;  /* Smooth scaling effect on hover */
+}
+
+.compare_images figcaption {
+    color: #333;  /* Caption text color */
+    font-size: 0.9em;  /* Caption text size */
+    padding-top: 8px;  /* Space between image and caption */
+}
+
+.compare_images figure:hover img {
+    transform: scale(1.1);  /* Enlarge image on hover */
+}
+
+
+
+.case_study_text{
+    padding: 20px;
+}
 
 .row_projects{
 
@@ -150,9 +199,8 @@ body {
 }
 
 img {
-    width: 300px; /* Set the width to your desired size */
-    height: 200px; /* Set the height to your desired size */
-    border-radius: 40px;
+    width: 50%; /* Set the width to your desired size */
+    height: 100%; /* Set the height to your desired size */
     border-color: black;
     padding: 10px; 
 }
@@ -166,13 +214,22 @@ img {
         flex-direction: column; /* Stacks flex items vertically */
         align-items: center; /* Centers items horizontally in the flex container */
     }
+    
 }
 
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 800px){
+    .compare_images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1080px){
     .projects {
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 
@@ -184,6 +241,19 @@ img {
 
 .footer p {
     text-align: left;
+}
+
+.image{
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+
+}
+
+.image img{
+    width: 60%; /* Set the width to your desired size */
+    height: 60%; /* Set the height to your desired size */
+    padding: 10px; 
 }
 
 .image-button {
