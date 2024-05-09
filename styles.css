@@ -1,22 +1,35 @@
+@font-face {
+    font-family: 'Calluna'; /* Name your font family */
+    src: url('/Users/kaitlynwilliams/Desktop/csci1300/portfolio/font/unicons.ttf'); /* Locate the .ttf file within your directory*/
+}
+  
+body {
+    font-family: 'Calluna', sans-serif; /* Use the font family */
+}
+
+
+
 .header {
-    background-color: #F1F1F1;
+    background-color: rgb(242, 198, 222, 0.5);
     text-align: center;
     padding: 20px;
+
 }
 
 /* The navbar container */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    color: black;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    
 }
   
 /* Navbar links */
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -25,7 +38,7 @@
   
 /* Links - change color on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(242, 198, 222, 1);;
     color: black;
 }
 
@@ -34,6 +47,8 @@
     float: left;
     width: 50%;
     box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(218, 222, 244, 0.5);
 }
 
 .row:after {
@@ -47,10 +62,15 @@
     justify-content: space-around;
     flex-wrap: wrap;            
     clear: both; 
+    background-color: rgb(198, 222, 241, 0.3);
+
 }
 
 .row{
-    padding: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 img {
@@ -73,6 +93,8 @@ img {
 
 }
 
+
+
 .footer {
     background-color: #F1F1F1;
     text-align: center;
@@ -80,25 +102,61 @@ img {
 }
 
 .image-button {
-    display: inline-block;
+    display: flex;            /* Using flexbox for centering */
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;      /* Vertically center the content */
+    flex: 1 1 40%; /* Each image button takes up 50% of the row */
+    justify-content: center;
+    width: 100%;              /* Takes full width of its parent container */
     border: none;
     outline: none;
     cursor: pointer;
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transformation */
+    text-decoration: none; 
+    border-radius: 15px;  
 }
 
 .image-button img {
     width: 200px; /* Set the desired width or make it responsive */
     display: block;
+    
 }
 
 .image-button:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Shadow effect */
     transform: scale(1.05); /* Slight scale up */
+
 }
 
+.image-button figure {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers the items in the figure */
+    margin: 0; /* Removes default margin from the figure */
+}
+
+
+.image-button figcaption {
+    color: black; /* Set your desired text color, matching normal text */
+    text-decoration: none; /* Ensures no underline appears */
+}
+
+.image-button strong {
+    color: inherit; /* Ensures the title inherits the figcaption color */
+    text-decoration: none; /* Prevents the title from being underlined */
+}
+
+
 .secondary_header {
-    background-color: #F1F1F1;
+    background-color: rgb(198, 222, 241, 0.3);
     text-align: center;
     padding: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .image-button {
+        flex: 1 1 40%; /* Each image button takes up 50% of the row */
+        justify-content: center;
+    }
+    
 }
