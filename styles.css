@@ -51,10 +51,15 @@ body {
     width: 50%;
     box-sizing: border-box;
     padding: 10px;
-    /* background-color: #F1F1F1; */
+
 }
 
-
+.column img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
 .row:after {
     content: "";
     display: table;
@@ -171,7 +176,14 @@ img {
 }
 
 
+.link {
+    text-decoration: none;
+    color: black;
+}
 
+.link:hover {
+    color: blue;
+}
 
 
 
