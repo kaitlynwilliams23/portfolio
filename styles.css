@@ -10,9 +10,10 @@ body {
 
 
 .header {
-    background-color: rgb(242, 198, 222, 0.5);
+    background-color: rgb(198, 222, 241, 0.3);
     text-align: center;
     padding: 20px;
+    border-radius: 50px;
 
 }
 
@@ -20,6 +21,7 @@ body {
 .topnav {
     overflow: hidden;
     color: black;
+    font-weight: normal;
     display: flex;
     justify-content: right;
     
@@ -38,8 +40,9 @@ body {
   
 /* Links - change color on hover */
 .topnav a:hover {
-    background-color: rgb(242, 198, 222, 1);;
+    background-color: rgb(198, 222, 241, 1);;
     color: black;
+    border-radius: 15px;  
 }
 
 /* Create two equal columns that float next to each other */
@@ -48,13 +51,15 @@ body {
     width: 50%;
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgb(218, 222, 244, 0.5);
+    /* background-color: #F1F1F1; */
 }
+
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+    
 }
 
 .projects {
@@ -62,15 +67,30 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;            
     clear: both; 
-    background-color: rgb(198, 222, 241, 0.3);
-
+    
+    
 }
 
-.row{
+.secondary_header {
+    
+    text-align: center;
+    padding: 20px;
+}
+
+.row {
     padding-left: 20px; 
     padding-right: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
+
+}
+
+
+
+.row_projects{
+
+    background-color: rgb(198, 222, 241, 0.3);
+    border-radius: 50px;
 }
 
 img {
@@ -96,9 +116,13 @@ img {
 
 
 .footer {
-    background-color: #F1F1F1;
+    /* background-color: #F1F1F1; */
     text-align: center;
     padding: 10px;
+}
+
+.footer p {
+    text-align: left;
 }
 
 .image-button {
@@ -114,6 +138,7 @@ img {
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transformation */
     text-decoration: none; 
     border-radius: 15px;  
+    padding: 10px;
 }
 
 .image-button img {
@@ -146,17 +171,7 @@ img {
 }
 
 
-.secondary_header {
-    background-color: rgb(198, 222, 241, 0.3);
-    text-align: center;
-    padding: 20px;
-}
 
 
-@media screen and (max-width: 1200px) {
-    .image-button {
-        flex: 1 1 40%; /* Each image button takes up 50% of the row */
-        justify-content: center;
-    }
-    
-}
+
+
