@@ -278,6 +278,8 @@ img {
 .image-button img {
     width: 200px; /* Set the desired width or make it responsive */
     display: block;
+   
+    border-radius: 30px;
     
 }
 
