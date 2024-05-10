@@ -144,7 +144,14 @@ body {
 .section_header{
     text-align: center;
     padding: 20px;
-    background-color: rgb(198, 222, 241, 0.3);
+    background-color: rgb(168, 209, 209, 0.3);
+    border-radius: 80px;
+}
+
+.tertiary_header{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(192, 216, 192, 0.3);
     border-radius: 80px;
 }
 
