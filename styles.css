@@ -199,7 +199,24 @@ body {
 
 .case_study_text{
     padding: 20px;
+    
 }
+
+.case_study_text p{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.case_study_text iframe{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 570px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 .row_projects{
 
@@ -258,6 +275,45 @@ img {
     align-items: center;      /* Centers vertically */
 
 }
+
+.partiful_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Ensure the container takes full width of its parent */
+    
+}
+
+.partiful_image figure {
+    position: relative;
+    width: 30%;  /* Control the width of each figure here */
+    height: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.partiful_image a {
+    text-decoration: none;  /* Removes underline from links */
+    color: inherit;  /* Inherits text color from parent elements */
+    display: block;  /* Makes the link block-level to fill the figure */
+    width: 100%;  /* Ensures the link fills the figure */
+    
+}
+
+.partiful_image img {
+    width: 100%;  /* Image fills the anchor element */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 30px;  /* Adds rounded corners to the image */
+    transition: transform 0.3s ease;  /* Smooth scaling effect on hover */
+}
+
+
+
+.partiful_image figure:hover img {
+    transform: scale(1.1);  /* Enlarge image on hover */
+}
+
+
 
 .image img{
     width: 60%; /* Set the width to your desired size */
