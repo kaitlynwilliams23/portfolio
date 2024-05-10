@@ -37,8 +37,6 @@ body {
     text-decoration: none;
 
 }
-  
-
 
 
 /* Links - change color on hover */
@@ -79,19 +77,9 @@ body {
 
 }
 
-/* .column img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    object-fit: cover; 
-} */
-
-
-  
 .column .image-cropper {
-    width: 200px;  /* Or any specific size you want for the circle */
-    height: 200px; /* Make sure width and height are equal for a perfect circle */
+    width: 300px;  /* Or any specific size you want for the circle */
+    height: 300px; /* Make sure width and height are equal for a perfect circle */
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -99,6 +87,7 @@ body {
     align-items: center;
     margin: 0 auto; /* Centering the wrapper if the column is wider */
     border: 3px solid rgb(198, 222, 241, 1); 
+    transform: translateY(30%); /* Center the image vertically */
 }
 
 .column img {
@@ -106,7 +95,8 @@ body {
     width: 100%;  /* This will fill the .image-wrapper maintaining aspect ratio */
     height: auto; /* Maintain aspect ratio */
     position: relative;
-    top: 35px;
+    top: 50px;
+    
 }
 
 
@@ -138,7 +128,6 @@ body {
     padding-right: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
-
 }
 
 .section_header{
@@ -384,9 +373,6 @@ img {
     text-decoration: none; /* Prevents the title from being underlined */
 }
 
-
-
-
 .link {
     text-decoration: none;
     color: black;
@@ -398,13 +384,20 @@ img {
 
 .back_button{
     margin-right: auto;
-
 }
 
 .pdf {
-    width: 100%;
+    width:100%;
 }
 
 .date {
     font-weight: lighter;
+}
+
+.feature{
+    font-size: large;
+}
+
+.about_me_text{
+    line-height: 1.3;
 }
