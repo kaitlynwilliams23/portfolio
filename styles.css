@@ -10,7 +10,7 @@ body {
 
 
 .header {
-    background-color: rgb(198, 222, 241, 0.3);
+    background-color: rgb(198, 222, 241, 0.35);
     text-align: center;
     padding: 20px;
     border-radius: 50px;
@@ -144,14 +144,14 @@ body {
 .section_header{
     text-align: center;
     padding: 20px;
-    background-color: rgb(168, 209, 209, 0.3);
+    background-color: rgb(0, 142, 151, 0.2);
     border-radius: 80px;
 }
 
 .tertiary_header{
     text-align: center;
     padding: 20px;
-    background-color: rgb(192, 216, 192, 0.3);
+    background-color: rgb(204, 204, 255, 0.3);
     border-radius: 80px;
 }
 
@@ -273,7 +273,19 @@ img {
     display: flex;
     justify-content: center;  /* Centers horizontally */
     align-items: center;      /* Centers vertically */
+    
+}
 
+.image_competitive{
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    
+}
+
+.image img{
+    border: 1px solid black;
+    border-radius: 10px ;
 }
 
 .partiful_image {
@@ -313,7 +325,9 @@ img {
     transform: scale(1.1);  /* Enlarge image on hover */
 }
 
-
+.list{
+    padding-left: 80px;
+}
 
 .image img{
     width: 60%; /* Set the width to your desired size */
