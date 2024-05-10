@@ -153,6 +153,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;  /* Ensure the container takes full width of its parent */
+    
 }
 
 .compare_images figure {
@@ -167,6 +168,7 @@ body {
     color: inherit;  /* Inherits text color from parent elements */
     display: block;  /* Makes the link block-level to fill the figure */
     width: 100%;  /* Ensures the link fills the figure */
+    
 }
 
 .compare_images img {
