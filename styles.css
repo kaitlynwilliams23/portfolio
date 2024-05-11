@@ -74,6 +74,7 @@ body {
     width: 50%;
     box-sizing: border-box;
     padding: 10px;
+    
 
 }
 
@@ -83,11 +84,12 @@ body {
     border-radius: 50%;
     overflow: hidden;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     margin: 0 auto; /* Centering the wrapper if the column is wider */
     border: 3px solid rgb(198, 222, 241, 1); 
-    transform: translateY(30%); /* Center the image vertically */
+    transform: translateY(25%); 
 }
 
 .column img {
@@ -329,7 +331,7 @@ img {
     display: flex;            /* Using flexbox for centering */
     justify-content: center;  /* Horizontally center the content */
     align-items: center;      /* Vertically center the content */
-    flex: 1 1 40%; /* Each image button takes up 50% of the row */
+    
     justify-content: center;
     width: 100%;              /* Takes full width of its parent container */
     border: none;
@@ -401,3 +403,51 @@ img {
 .about_me_text{
     line-height: 1.3;
 }
+
+.column_about {
+    max-width: 600px; /* Adjust based on your layout needs */
+    margin: auto; /* Centering the column if needed */
+}
+
+.image-container_about1 img {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Space between the image and the text */
+    width: 150px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    transform: translateY(-20%);
+}
+.image-container_about2 img {
+    float: right; /* Float the image to the left */
+    margin-left: 20px; /* Space between the image and the text */
+    width: 150px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    transform: translateY(-20%);
+}
+
+
+.text-container_about {
+    overflow: hidden; /* Ensures the container respects the floating img */
+}
+
+.row .center_text{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.travel img {
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+}
+
+.travel{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+
